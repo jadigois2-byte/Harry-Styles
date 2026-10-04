@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harry Styles — Trajetória e Álbuns</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="container">
+    <a href="#inicio" class="logo">Harry Styles</a>
+    <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">☰</button>
+    <ul class="menu" id="menu">
+      <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#albuns">Álbuns</a></li>
+      <li><a href="#novidades">Novidades</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="heroi" id="inicio">
+    <div class="container">
+      <span class="etiqueta">Cantor · Compositor · Ator</span>
+      <h1>Harry <span>Styles</span></h1>
+      <p>De uma banda de garotos a um dos maiores nomes do pop mundial: conheça a história e a discografia solo do artista britânico.</p>
+      <a href="#albuns" class="botao">Ver álbuns</a>
+      <div class="numeros">
+        <div><strong data-alvo="3">0</strong><span>álbuns solo</span></div>
+        <div><strong data-alvo="1994">0</strong><span>ano de nascimento</span></div>
+        <div><strong data-alvo="2017">0</strong><span>início da carreira solo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trajetoria">
+    <div class="container">
+      <h2 class="titulo-secao">Trajetória</h2>
+      <p class="subtitulo-secao">Os principais momentos de uma carreira construída entre a música, o cinema e a moda.</p>
+      <div class="linha-do-tempo">
+        <article class="evento revelar">
+          <span class="ano">1994</span>
+          <h3>Começo em Redditch</h3>
+          <p>Harry Edward Styles nasce na Inglaterra e começa a cantar cedo, até em uma banda escolar.</p>
+        </article>
+        <article class="evento revelar">
+          <span class="ano">2010</span>
+          <h3>One Direction</h3>
+          <p>No The X Factor britânico, é colocado em um grupo com outros quatro participantes. Nasce a One Direction, que se torna um fenômeno global.</p>
+        </article>
+        <article class="evento revelar">
+          <span class="ano">2017</span>
+          <h3>Carreira solo e cinema</h3>
+          <p>Lança "Sign of the Times" e o primeiro álbum, além de estrear nos cinemas em "Dunkirk", de Christopher Nolan.</p>
+        </article>
+        <article class="evento revelar">
+          <span class="ano">2019</span>
+          <h3>Fine Line</h3>
+          <p>O segundo álbum consolida seu estilo próprio, com o sucesso mundial de "Watermelon Sugar".</p>
+        </article>
+        <article class="evento revelar">
+          <span class="ano">2022</span>
+          <h3>Harry's House</h3>
+          <p>Com "As It Was", chega ao topo das paradas e ganha o Grammy de Álbum do Ano em 2023, além de turnês lotadas na Love On Tour.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="albuns">
+    <div class="container">
+      <h2 class="titulo-secao">Álbuns</h2>
+      <p class="subtitulo-secao">Clique em um álbum para ver detalhes e algumas faixas.</p>
+      <div class="filtros" id="filtros">
+        <button class="filtro ativo" data-decada="todos">Todos</button>
+        <button class="filtro" data-decada="2010">Anos 2010</button>
+        <button class="filtro" data-decada="2020">Anos 2020</button>
+      </div>
+      <div class="grade-albuns" id="gradeAlbuns"></div>
+    </div>
+  </section>
+
+  <section id="novidades">
+    <div class="container">
+      <div class="chamada revelar">
+        <h2>Fique por dentro</h2>
+        <p>Receba novidades sobre lançamentos e turnês.</p>
+        <form id="formulario">
+          <input type="email" id="campoEmail" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="botao">Quero receber</button>
+        </form>
+        <p id="mensagem-form" role="status"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">Página de fã feita por Jadi Gois. Não é um site oficial.</div>
+</footer>
+
+<div class="fundo-modal" id="fundoModal">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="fechar" id="botaoFechar" aria-label="Fechar">×</button>
+    <h3 id="modalTitulo"></h3>
+    <p class="meta" id="modalMeta"></p>
+    <p id="modalDescricao"></p>
+    <ol id="modalFaixas"></ol>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
